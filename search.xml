@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/10/04/hello-world/</url>
-    <content><![CDATA[<p>Hello World!</p>
+    <title>GIthub page 配置Hexo 博客框架</title>
+    <url>/2022/10/04/hexo-githubpage/</url>
+    <content><![CDATA[<p>使用GitHub page部署hexo博客框架,选用next主题</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="本地服务预览"><a href="#本地服务预览" class="headerlink" title="本地服务预览"></a>本地服务预览</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="上传github"><a href="#上传github" class="headerlink" title="上传github"></a>上传github</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Test</category>
+        <category>部署</category>
       </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
 </search>

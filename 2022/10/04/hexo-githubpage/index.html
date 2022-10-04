@@ -20,25 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="灵台无计逃神矢，风雨如磐暗故园。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YYF">
-<meta property="og:url" content="http://example.com/archives/2022/10/index.html">
+    <meta name="description" content="使用GitHub page部署hexo博客框架,选用next主题 部署创建新文件1$ hexo new &quot;My New Post&quot;  本地服务预览1$ hexo server  生成静态文件1$ hexo generate  上传github1$ hexo deploy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GIthub page 配置Hexo 博客框架">
+<meta property="og:url" content="http://example.com/2022/10/04/hexo-githubpage/index.html">
 <meta property="og:site_name" content="YYF">
-<meta property="og:description" content="灵台无计逃神矢，风雨如磐暗故园。">
+<meta property="og:description" content="使用GitHub page部署hexo博客框架,选用next主题 部署创建新文件1$ hexo new &quot;My New Post&quot;  本地服务预览1$ hexo server  生成静态文件1$ hexo generate  上传github1$ hexo deploy">
 <meta property="og:locale">
+<meta property="article:published_time" content="2022-10-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-04T11:52:51.433Z">
 <meta property="article:author" content="yanyunfang">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/2022/10/">
+<link rel="canonical" href="http://example.com/2022/10/04/hexo-githubpage/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"default","comments":"","permalink":"","path":"archives/2022/10/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"default","comments":true,"permalink":"http://example.com/2022/10/04/hexo-githubpage/","path":"2022/10/04/hexo-githubpage/","title":"GIthub page 配置Hexo 博客框架"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>الأرشيف | YYF</title>
+<title>GIthub page 配置Hexo 博客框架 | YYF</title>
   
 
 
@@ -69,7 +72,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">YYF</h1>
+      <p class="site-title">YYF</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -128,7 +131,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           المحتويات
@@ -141,6 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2"><span class="nav-number">1.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1%E9%A2%84%E8%A7%88"><span class="nav-number">1.2.</span> <span class="nav-text">本地服务预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0github"><span class="nav-number">1.4.</span> <span class="nav-text">上传github</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -192,49 +196,99 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">هِم..! مقالٌ واحد. واصل الكتابة.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="default">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/04/hexo-githubpage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yanyunfang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YYF">
+      <meta itemprop="description" content="灵台无计逃神矢，风雨如磐暗故园。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="GIthub page 配置Hexo 博客框架 | YYF">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GIthub page 配置Hexo 博客框架
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">نُشر في</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="أُنشأ: 2022-10-04 00:00:00 / عُدل: 19:52:51" itemprop="dateCreated datePublished" datetime="2022-10-04T00:00:00+08:00">2022-10-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">في</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%83%A8%E7%BD%B2/" itemprop="url" rel="index"><span itemprop="name">部署</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>使用GitHub page部署hexo博客框架,选用next主题</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="本地服务预览"><a href="#本地服务预览" class="headerlink" title="本地服务预览"></a>本地服务预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="上传github"><a href="#上传github" class="headerlink" title="上传github"></a>上传github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-10-04T00:00:00+08:00"
-              content="2022-10-04">
-          10-04
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/10/04/hexo-githubpage/" itemprop="url">
-            <span itemprop="name">GIthub page 配置Hexo 博客框架</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
 
-      
-    </header>
+        
+
+    </footer>
   </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 </div>
   </main>
