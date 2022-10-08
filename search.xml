@@ -15,8 +15,7 @@
 <h4 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h4><p>​		<a href="https://git-scm.com/">git官网</a>下载</p>
 <h4 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
-<h4 id="4-hexo初始化"><a href="#4-hexo初始化" class="headerlink" title="4.hexo初始化"></a>4.hexo初始化</h4><pre><code>     在文件资源管理器自定义位置创建hexo-blog文件夹，并在hexo-blog文件夹内打开CMD。
-</code></pre>
+<h4 id="4-hexo初始化"><a href="#4-hexo初始化" class="headerlink" title="4.hexo初始化"></a>4.hexo初始化</h4><p>​		在文件资源管理器自定义位置创建hexo-blog文件夹，并在hexo-blog文件夹内打开CMD。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
 <h4 id="5-下载主题"><a href="#5-下载主题" class="headerlink" title="5.下载主题"></a>5.下载主题</h4><p>​		在<a href="https://hexo.bootcss.com/docs/">HEXO</a>选择主题并在github下载，下载后放入theme文件夹下。或者直接在theme文件夹下打开cmd使用git拉取。</p>
