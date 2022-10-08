@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>GIthub page 配置Hexo 博客框架</title>
+    <title>Github page配置Hexo博客框架</title>
     <url>/2022/10/04/hexo-githubpage/</url>
-    <content><![CDATA[<p>使用GitHub page部署hexo博客框架,选用next主题</p>
+    <content><![CDATA[<p>使用GitHub page部署hexo博客框架,选用next主题,补充搜索、阅读全文、添加图片功能。</p>
+<p><a href="https://hexo.bootcss.com/docs/">HEXO官方文档</a></p>
+<p><a href="http://theme-next.iissnan.com/getting-started.html">NEXT THEME官方文档</a></p>
 <span id="more"></span>
 
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
