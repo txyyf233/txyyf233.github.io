@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>nacos、redis、rocketmq集群部署</title>
-    <url>/2022/10/08/nacos-redis-rocketmq/</url>
-    <content><![CDATA[<p>Springboot Cloud Alibaba集群部署，包括redis哨兵模式、nacos集群、rocketmq集群。</p>
-<span id="more"></span>
-
-<h2 id="Nacos"><a href="#Nacos" class="headerlink" title="Nacos"></a>Nacos</h2><h3 id="创建新文件"><a href="#创建新文件" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h2><h3 id="创建新文件-1"><a href="#创建新文件-1" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Rocketmq"><a href="#Rocketmq" class="headerlink" title="Rocketmq"></a>Rocketmq</h2><h3 id="创建新文件-2"><a href="#创建新文件-2" class="headerlink" title="创建新文件"></a>创建新文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>运维</category>
-      </categories>
-      <tags>
-        <tag>redis</tag>
-        <tag>nacos</tag>
-        <tag>rocketmq</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Github page配置Hexo博客框架</title>
     <url>/2022/10/04/github-page/</url>
     <content><![CDATA[<p>​		使用GitHub page部署hexo博客框架,选用next主题,补充搜索、阅读全文、添加图片功能。</p>
