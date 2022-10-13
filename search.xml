@@ -4,13 +4,13 @@
     <title>Github page配置Hexo博客框架</title>
     <url>/2022/10/04/github-page/</url>
     <content><![CDATA[<p>​		使用GitHub page部署hexo博客框架,选用next主题,补充搜索、阅读全文、添加图片功能。</p>
+<span id="more"></span>
+
 <p><a href="https://pages.github.com/">GITHUB PAGE官网</a></p>
 <p><a href="https://hexo.bootcss.com/docs/">HEXO官方文档</a></p>
 <p><a href="http://theme-next.iissnan.com/getting-started.html">NEXT THEME官方文档</a></p>
 <p><a href="https://git-scm.com/">GIT官网</a></p>
 <p><a href="https://nodejs.org/">NODE官网</a></p>
-<span id="more"></span>
-
 <h2 id="Github-page"><a href="#Github-page" class="headerlink" title="Github page"></a>Github page</h2><h3 id="Github-page部署"><a href="#Github-page部署" class="headerlink" title="Github page部署"></a>Github page部署</h3><p>​		在<a href="https://github.com/">GitHub</a> 登录并创建一个名为 <em>username.github.io</em> 的<a href="https://github.com/new">新公共存储库</a>，其中username是您在 GitHub 上的用户名。可以在创建仓库时添加README.md文件用于测试。仓库创建成功后，浏览器访问<a href="https://username.github.io/README.md%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E5%88%9B%E5%BB%BA%E6%88%90%E5%8A%9F%EF%BC%8C%E7%A1%AE%E8%AE%A4%E6%AD%A3%E5%B8%B8%E5%90%8E%E5%8F%AF%E4%BB%A5%E5%88%A0%E9%99%A4README.md%E3%80%82">https://username.github.io/README.md检查是否创建成功，确认正常后可以删除README.md。</a></p>
 <p>​		每个账户仅能创建一个静态网站，如果存储库的第一部分与您的用户名不完全匹配，则无法正常工作，因此请确保正确填写。</p>
 <h2 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h2><h3 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h3><h4 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h4><p>​		官网下载</p>
@@ -35,26 +35,30 @@
 <h4 id="8-添加本地搜索"><a href="#8-添加本地搜索" class="headerlink" title="8.添加本地搜索"></a>8.添加本地搜索</h4><p>​		在hexo-blog文件夹下打开cmd下载插件,然后参考步骤6、7添加配置文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
 
-<h4 id="9-上传hexo静态文件到github-page"><a href="#9-上传hexo静态文件到github-page" class="headerlink" title="9.上传hexo静态文件到github page"></a>9.上传hexo静态文件到github page</h4><p>​		在hexo-blog文件夹下打开cmd，编译并上传静态文件</p>
+<h4 id="9-阅读全文功能"><a href="#9-阅读全文功能" class="headerlink" title="9.阅读全文功能"></a>9.阅读全文功能</h4><p>​		在文章合适地方插入<code>&lt;!--more--&gt;</code>,其后段落将会隐藏</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/10/04/github-page/1665651788699.png"></p>
+<h4 id="10-上传hexo静态文件到github-page"><a href="#10-上传hexo静态文件到github-page" class="headerlink" title="10.上传hexo静态文件到github page"></a>10.上传hexo静态文件到github page</h4><p>​		在hexo-blog文件夹下打开cmd，编译并上传静态文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态文件</span><br><span class="line">hexo g</span><br><span class="line"># 本地预览,部署时可省略，执行后可访问localhost:4000</span><br><span class="line">hexo s</span><br><span class="line"># 上传到github page</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<h4 id="10-新建一篇博客"><a href="#10-新建一篇博客" class="headerlink" title="10.新建一篇博客"></a>10.新建一篇博客</h4><p>​		在hexo-blog文件夹下打开cmd</p>
+<h4 id="11-新建一篇博客"><a href="#11-新建一篇博客" class="headerlink" title="11.新建一篇博客"></a>11.新建一篇博客</h4><p>​		在hexo-blog文件夹下打开cmd</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;hello-world&quot;</span><br></pre></td></tr></table></figure>
 
 <p>​		这时在hexo-blog&#x2F;source&#x2F;_posts可以发现新创建的hello-world.md文件。打开新建的MD文件,头部添加下面信息。分别为博客标题title、博客分类categories、博客标签tags、博客发布日期date</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Github page配置Hexo博客框架</span><br><span class="line">categories: 部署</span><br><span class="line">tags: hexo</span><br><span class="line">date: 2022-10-4</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h4 id="11-md添加图片"><a href="#11-md添加图片" class="headerlink" title="11.md添加图片"></a>11.md添加图片</h4><p>​		在md文件中插入图片的语法为<code>![]()</code>。其中方括号是图片描述，圆括号是图片路径。由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。在hexo中使用文章资源文件夹需要在<code>config.yaml</code>文件中更改一下配置，见章节6：</p>
+<h4 id="12-md添加图片"><a href="#12-md添加图片" class="headerlink" title="12.md添加图片"></a>12.md添加图片</h4><p>​		在md文件中插入图片的语法为<code>![]()</code>。其中方括号是图片描述，圆括号是图片路径。由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。在hexo中使用文章资源文件夹需要在<code>config.yaml</code>文件中更改一下配置，见章节6：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
 
-<p>​		这样使用章节10生成文章时会在同路径生成一个同名的资源文件夹。我们使用typera编辑文章时，为了更加方便的直接把图片插入到资源文件夹下，可以对typera进行如下配置，<code>文件-&gt;偏好设置</code>：</p>
+<p>​		这样使用章节11生成文章时会在同路径生成一个同名的资源文件夹。我们使用typera编辑文章时，为了更加方便的直接把图片插入到资源文件夹下，可以对typera进行如下配置，<code>文件-&gt;偏好设置</code>：</p>
 <p><img src="/2022/10/04/github-page/1665648028146.png"></p>
 <p>​		但是这时我们会发现图片会因为路径不对不能显示在文章中，这个问题可以使用 <a href="https://link.zhihu.com/?target=https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> 插件来解决。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 在hexo-blog下安装插件</span><br><span class="line">npm install hexo-renderer-marked</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 修改hexo配置文件，见章节6</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br></pre></td></tr></table></figure>
 
-<p>​		最后需要注意，当我们把文章上传到文件服务器， 文件路径和本地是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的<code>文件名/</code>前缀（为了方便恢复本地预览，建议备份后再删除），这里在typora中全局替换即可 。</p>
+<p>​		最后需要注意，当我们把文章上传到文件服务器， 文件路径和本地是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的<code>文件名/</code>前缀（为了方便恢复本地预览，建议备份文章后再删除），这里在typora中全局替换即可 。</p>
 ]]></content>
       <categories>
         <category>部署</category>
