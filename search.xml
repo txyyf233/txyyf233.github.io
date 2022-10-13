@@ -38,7 +38,6 @@
 <h4 id="9-阅读全文功能"><a href="#9-阅读全文功能" class="headerlink" title="9.阅读全文功能"></a>9.阅读全文功能</h4><p>​		在文章合适地方插入<code>&lt;!--more--&gt;</code>,其后段落将会隐藏</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2022/10/04/github-page/1665651788699.png"></p>
 <h4 id="10-上传hexo静态文件到github-page"><a href="#10-上传hexo静态文件到github-page" class="headerlink" title="10.上传hexo静态文件到github page"></a>10.上传hexo静态文件到github page</h4><p>​		在hexo-blog文件夹下打开cmd，编译并上传静态文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 生成静态文件</span><br><span class="line">hexo g</span><br><span class="line"># 本地预览,部署时可省略，执行后可访问localhost:4000</span><br><span class="line">hexo s</span><br><span class="line"># 上传到github page</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
